@@ -1,6 +1,9 @@
 import React from "react";
 import Card from "./Card";
 import "./styles/Projects.css";
+import SpaceInvaders from "../assets/SpaceInvaders.png";
+import TicTacToe from "../assets/TicTacToe.png"
+import BikeShare from "../assets/BikeShare.png";
 
 const Projects = () => {
 return (
@@ -9,28 +12,33 @@ return (
             <h2 className="text-3xl font-bold mb-8">My Projects</h2>
             <div className="cards-container">
                 <Card
-                    img="proyecto1.jpg"
-                    title="Atletic Les Corts – Website"
-                    language="React"
-                    description="Diseño y desarrollo del sitio web oficial del club de fútbol sala Atletic Les Corts, implementado con React para ofrecer una experiencia moderna y responsive."
+                    img="Atletic.jpg"
+                    title="Atletic Les Corts"
+                    subtitle="Web App"
+                    description="Diseño y desarrollo del sitio web oficial del club de fútbol sala Atletic Les Corts, implementado con React para ofrecer una experiencia moderna y responsive. Creado con React."
+                    link="https://atleticlescorts.com/"
                 />
                 <Card
-                    img="proyecto2.jpg"
-                    title="BikeShare – Mobile App"
-                    language="React Native & Supabase"
-                    description="Aplicación móvil para el alquiler de bicicletas urbanas, desarrollada con React Native y gestionada mediante Supabase como backend."
+                    img={BikeShare}
+                    title="BikeShare "
+                    subtitle="Mobile App"
+                    description="Aplicación móvil creada en grupo para el alquiler de bicicletas urbanas, desarrollada con React Native y gestionada mediante Supabase como backend. Encargado del FrontEnd."
+                    link="https://github.com/cristoge/bikeshare/tree/master/src"
                 />
                 <Card
-                    img="proyecto3.jpg"
-                    title="Tic Tac Toe – Console Game"
-                    language="Java"
-                    description="Versión por consola del juego clásico 3 en raya, desarrollada en Java. Implementa lógica de turnos y condiciones de victoria para partidas rápidas entre dos jugadores."
+                    img={TicTacToe}
+                    title="Tic Tac Toe "
+                    subtitle="Console Game"
+                    description="Versión por consola del juego clásico 3 en raya, desarrollada en Java. Implementa lógica de turnos y condiciones de victoria para partidas rápidas entre dos jugadores. Creeado con Java."
+                    link="https://github.com/Rauljouman/3-en-raya"
+
                 />
                 <Card
-                    img="proyecto4.jpg"
-                    title="Space Invaders – Web Game"
-                    language="HTML, CSS & JavaScript"
-                    description="Recreación del juego arcade Space Invaders, programado con HTML, CSS y JavaScript puro, enfocado en la lógica y el dinamismo visual."
+                    img={SpaceInvaders}
+                    title="Space Invaders "
+                    subtitle="Web Game"
+                    description="Recreación del juego arcade Space Invaders, programado con HTML, CSS y JavaScript puro, enfocado en la lógica y el dinamismo visual. Creado con HTML, CSS y JavaScript."
+                    link="https://github.com/Rauljouman/Space-Invader"
                 />
             </div>
         </div>

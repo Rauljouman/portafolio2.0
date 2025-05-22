@@ -1,14 +1,18 @@
 import React from "react";
 import "./styles/Card.css";
 
-
-const Card = ({ img, title, description, language }) => {
+const Card = ({ img, title, description, link, subtitle }) => {
   return (
-    <div className="project-card">
+    <a href={link} target="_blank" rel="noopener noreferrer" className="project-card">
       <img src={img} alt={title} className="project-image" />
-      <p>{language}</p>
-      <p>{description}</p>
-    </div>
+      <div className="card-overlay">
+        <h3>{title}</h3>
+        <h5>{subtitle}</h5>
+        <div className="card-hover">
+          <p>{description}</p>
+        </div>
+      </div>
+    </a>
   );
 };
 

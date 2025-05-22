@@ -12,7 +12,7 @@ return (
             <h2 className="text-3xl font-bold mb-8">My Projects</h2>
             <div className="cards-container">
                 <Card
-                    img="proyecto1.jpg"
+                    img="Atletic.jpg"
                     title="Atletic Les Corts"
                     subtitle="Web App"
                     description="Diseño y desarrollo del sitio web oficial del club de fútbol sala Atletic Les Corts, implementado con React para ofrecer una experiencia moderna y responsive. Creado con React."

@@ -1,5 +1,5 @@
 .projects {
-  background-color: #0f0f0f; 
+  background-color: #0a0a0a; 
   min-height: 60vh;
   color: #f5f5f5;
   display: flex;
@@ -19,10 +19,10 @@
 
 .cards-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 3.5rem;
+  margin: 2rem;
 }
 
 @keyframes slideInLeft {

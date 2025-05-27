@@ -1,8 +1,8 @@
-import './styles/Landing.css';
+import './styles/Home.css';
 
-export default function Landing() {
+const Home = () => {
   return (
-    <main> 
+    <section className="home" id="home"> 
         <div className="landing">
             <h1>Raül Jouman</h1>
             <p className="title">Junior Full Stack Developer</p>
@@ -10,6 +10,8 @@ export default function Landing() {
                 <br/>I love turning concepts into code and 
                 <br/>learning something new every day.</p>
         </div>
-      </main>
+      </section>
   );
 }
+
+export default Home;

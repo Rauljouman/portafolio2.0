@@ -1,0 +1,78 @@
+.languages-section {
+  background-color: #0f0f0f;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.languages-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.languages-subtitle {
+  color: #999;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.languages-column {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 2rem; 
+  justify-items: center;
+}
+
+
+.language-card {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 150px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.languages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  justify-items: space-around;
+  padding: 2rem 6rem;
+}
+
+.language-card {
+  background-color: #1a1a1a;
+  width: 130px;
+  height: 140px;
+  aspect-ratio: 1 / 1; 
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.language-card:hover {
+  transform: scale(1.05);
+}
+
+.language-icon-centered {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 0.8rem;
+}
+
+.language-name-below {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #f0f0f0;
+  text-align: center;
+}

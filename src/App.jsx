@@ -1,18 +1,23 @@
 import { useState } from 'react';
-import Landing from './components/Landing';
+import Home from './components/Home';
 import Projects from './components/Projects';
 import Sidebar from './components/Sidebar';
 import Experience from './components/Experience';
-// import Intro from './components/Intro'; ← se activará después
+import Languages from './components/Languages';
 
 function App() {
 return(
-    <>
+  <div>
+    <div>
       {<Sidebar /> }
-      {<Landing />}
-      {<Projects />}
-      {<Experience />}
-    </>
+    </div>
+    <div>
+        {<Home />}
+        {<Languages />}
+        {<Projects />}
+        {<Experience />}
+    </div>
+  </div>
   );
 }
 

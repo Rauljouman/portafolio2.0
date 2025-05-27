@@ -5,7 +5,7 @@ const Sidebar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "projects", "contact"];
+      const sections = ["home", "languages", "projects", "experience"];
       for (let sec of sections) {
         const el = document.getElementById(sec);
         if (el) {
@@ -23,9 +23,9 @@ const Sidebar = () => {
 
   const links = [
     { id: "home", icon: "🏠", label: "Home" },
+    { id: "languages", icon: "🐞", label: "Languages" },
     { id: "projects", icon: "🧠", label: "Projects" },
     { id: "experience", icon: "💻", label: "Experience" },
-    { id: "contact", icon: "🐞", label: "Contact" },
   ];
 
   return (

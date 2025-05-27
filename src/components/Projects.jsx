@@ -14,7 +14,7 @@ return (
             <div ref={ref} className={`projects-content ${visible ? "animate-slide-in" : "hidden-slide"}`}>
                 <h2 className="text-3xl font-bold mb-8">My Projects</h2>
                 <p className="section-description">
-                    Estos son algunos de los proyectos que he creado o en los que he participado. Espero que te gusten!
+                    Here are some of the projects I’ve created or contributed to. I hope you enjoy exploring them!
                 </p>
                 <div className="cards-container">
                     <Card

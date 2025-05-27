@@ -1,6 +1,6 @@
 .experience {
   padding: 3rem 1rem;
-  background-color: #0a0a0a;
+  background-color: #0f0f0f;
   text-align: center;
   color: #f5f5f5;
 }
@@ -33,16 +33,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 5rem;
 }
 
 .experience-block {
-  width: 300px;
+  width: 350px;
   background-color: #1a1a1a;
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
   text-align: left;
+  margin-bottom: 15px;
 }
 
 .experience-subtitle {

@@ -9,7 +9,7 @@ const Experience = () => {
     <section className="experience" id="experience">
       <div ref={ref} className={`experience-content ${visible ? "animate-slide-in" : "hidden-slide"}`}>
         <h2 className="section-title">Trayectoria</h2>
-        <p className="section-description">
+        <p className="text-description">
           A continuación, comparto un resumen de mi trayectoria profesional y académica,<br></br> destacando tanto la experiencia técnica como la práctica que he adquirido.
         </p>
         <div className="experience-columns">

@@ -12,8 +12,8 @@ const [ref, visible] = useScrollAnimation();
 return (
         <section className="projects" id="projects">
             <div ref={ref} className={`projects-content ${visible ? "animate-slide-in" : "hidden-slide"}`}>
-                <h2 className="text-3xl font-bold mb-8">Proyectos</h2>
-                <p className="section-description">
+                <h2 className="text-title">Proyectos</h2>
+                <p className="text-description">
                 Estos son algunos de los proyectos que he desarrollado o en los que he colaborado.<br></br>
                 ¡Espero que disfrutes que te interse ver alguno!
                 </p>

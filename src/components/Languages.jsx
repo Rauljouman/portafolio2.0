@@ -40,11 +40,10 @@ const Languages = () => {
   return (
     <section className="languages-section" id="languages">
       <h2 className="languages-title">Lenguajes</h2>
-      <p className="languages-subtitle">
-        A lo largo de mi formación y experiencia, he trabajado y estudiado con diferentes lenguajes de programación, que me han permitido desarrollar soluciones funcionales y creativas.  
-        <br></br>Estas son algunas de las tecnologías que he utilizado.
+      <p className="text-description">
+        A lo largo de mi formación y experiencia, he trabajado con distintos lenguajes de programación que me han permitido desarrollar soluciones funcionales y creativas.  
+        Estas son algunas de las tecnologías que utilizo habitualmente y con las que me siento más cómodo.
       </p>
-
       <div className="languages-grid">
         {languages.map((lang, index) => (
             <div className="language-card" key={index}>

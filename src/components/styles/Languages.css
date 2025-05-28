@@ -43,9 +43,14 @@
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 2rem;
-  justify-items: space-around;
-  padding: 2rem 6rem;
+  justify-items: center;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
 }
+
 
 .language-card {
   background-color: #1a1a1a;

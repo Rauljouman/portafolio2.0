@@ -12,10 +12,12 @@ const [ref, visible] = useScrollAnimation();
 return (
         <section className="projects" id="projects">
             <div ref={ref} className={`projects-content ${visible ? "animate-slide-in" : "hidden-slide"}`}>
-                <h2 className="text-3xl font-bold mb-8">My Projects</h2>
+                <h2 className="text-3xl font-bold mb-8">Proyectos</h2>
                 <p className="section-description">
-                    Here are some of the projects I’ve created or contributed to. I hope you enjoy exploring them!
+                Estos son algunos de los proyectos que he desarrollado o en los que he colaborado.<br></br>
+                ¡Espero que disfrutes que te interse ver alguno!
                 </p>
+
                 <div className="cards-container">
                     <Card
                         img={BikeShare}

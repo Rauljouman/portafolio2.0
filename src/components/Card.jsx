@@ -19,7 +19,7 @@ const Card = ({ img, title, description, link, subtitle }) => {
           <p>{description}</p>
         </div>
       </div>
-      <h3>{title}</h3>
+      <h3 className="project-title">{title}</h3>
       <span>{subtitle}</span>
     </a>
   );

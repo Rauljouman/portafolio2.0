@@ -41,7 +41,7 @@
 
 .languages-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(8, 1fr);
   gap: 2rem;
   justify-items: space-around;
   padding: 2rem 6rem;
@@ -76,3 +76,18 @@
   color: #f0f0f0;
   text-align: center;
 }
+
+@media (max-width: 767px) {
+  .languages-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .languages-grid {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem 3rem;
+  }
+}
+

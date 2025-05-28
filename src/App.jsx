@@ -4,19 +4,23 @@ import Projects from './components/Projects';
 import Sidebar from './components/Sidebar';
 import Experience from './components/Experience';
 import Languages from './components/Languages';
+import Footer from './components/Footer.jsx';
 
 function App() {
 return(
   <div>
-    <div>
+    <header>
       {<Sidebar /> }
-    </div>
-    <div>
+    </header>
+    <main>
         {<Home />}
         {<Languages />}
         {<Projects />}
         {<Experience />}
-    </div>
+    </main>
+    <footer>
+      <Footer />
+    </footer>
   </div>
   );
 }

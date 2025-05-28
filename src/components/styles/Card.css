@@ -64,5 +64,8 @@
 
 .project-card:hover .card-hover {
   opacity: 1; 
-  
+}
+
+.project-title {
+  margin-bottom: 20px;
 }

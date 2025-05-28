@@ -8,9 +8,10 @@ const Experience = () => {
   return (
     <section className="experience" id="experience">
       <div ref={ref} className={`experience-content ${visible ? "animate-slide-in" : "hidden-slide"}`}>
-        <h2 className="section-title">Experience</h2>
+        <h2 className="section-title">Trayectoria</h2>
         <p className="section-description">
-          Below is a summary of my professional and academic background, highlighting both technical and practical experience.</p>
+          A continuación, comparto un resumen de mi trayectoria profesional y académica,<br></br> destacando tanto la experiencia técnica como la práctica que he adquirido.
+        </p>
         <div className="experience-columns">
           <div className="experience-block">
             <h3 className="experience-subtitle">💼 Trabajo</h3>

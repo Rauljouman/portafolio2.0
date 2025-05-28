@@ -18,12 +18,17 @@
 }
 
 .cards-container {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  gap: 3.5rem;
-  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 2rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+  justify-items: center;
 }
+
 
 @keyframes slideInLeft {
   from {
@@ -44,4 +49,14 @@
   opacity: 0;
   transform: translateX(-80px);
 }
+
+@media (max-width: 1024px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr); 
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
 

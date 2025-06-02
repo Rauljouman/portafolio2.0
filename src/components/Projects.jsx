@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./Card";
 import "./styles/Projects.css";
 import SpaceInvaders from "../assets/SpaceInvaders.png";
-import TicTacToe from "../assets/TicTacToe.png"
+import TicTacToe from "../assets/TicTacToe.png";
 import BikeShare from "../assets/BikeShare.png";
 import Portafolio1 from "../assets/Portafolio1.png";
 import { useScrollAnimation } from "./ScrollAnimation";

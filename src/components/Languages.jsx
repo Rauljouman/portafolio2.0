@@ -40,7 +40,7 @@ const Languages = () => {
   return (
     <section className="languages-section" id="languages">
       <h2 className="languages-title">Lenguajes</h2>
-      <p className="text-description">
+      <p className="section-description">
         A lo largo de mi formación y experiencia, he trabajado y estudiado con diferentes<br></br>lenguajes de programación. Estos son algunas de las tecnologías que he utilizado.
       </p>
 

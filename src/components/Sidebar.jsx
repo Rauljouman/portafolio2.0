@@ -23,9 +23,9 @@ const Sidebar = () => {
 
   const links = [
     { id: "home", icon: "🏠", label: "Home" },
-    { id: "languages", icon: "🐞", label: "Languages" },
-    { id: "projects", icon: "🧠", label: "Projects" },
-    { id: "experience", icon: "💻", label: "Experience" },
+    { id: "languages", icon: "🧠", label: "Languages" },
+    { id: "projects", icon: "💻", label: "Projects" },
+    { id: "experience", icon: "🐞", label: "Experience" },
   ];
 
   return (

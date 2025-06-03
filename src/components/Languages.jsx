@@ -1,5 +1,7 @@
 import React from "react";
 import "./styles/Languages.css";
+import { useScrollAnimation } from "./ScrollAnimation";
+
 
 const languages = [
   {
@@ -37,21 +39,24 @@ const languages = [
 ];
 
 const Languages = () => {
+
+  const [ref, visible] = useScrollAnimation();
   return (
     <section className="languages-section" id="languages">
-      <h2 className="languages-title">Lenguajes</h2>
-      <p className="section-description">
-        A lo largo de mi formación y experiencia, he trabajado y estudiado con diferentes<br></br>lenguajes de programación. Estos son algunas de las tecnologías que he utilizado.
-      </p>
-
-      <div className="languages-grid">
-        {languages.map((lang, index) => (
+      <div ref={ref} className={`languages-content ${visible ? "animate-slide-in" : "hidden-slide"}`}>
+        <h2 className="languages-title">Lenguajes</h2>
+        <p className="section-description">
+          A lo largo de mi formación y experiencia, he trabajado y estudiado con diferentes<br></br>lenguajes de programación. Estos son algunas de las tecnologías que he utilizado.
+        </p>
+        <div className="languages-grid">
+          {languages.map((lang, index) => (
             <div className="language-card" key={index}>
             <img src={lang.icon} alt={lang.name} className="language-icon-centered" />
             <span className="language-name-below">{lang.name}</span>
             </div>
         ))}
         </div>
+      </div>
     </section>
   );
 };

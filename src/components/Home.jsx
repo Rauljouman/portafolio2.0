@@ -2,7 +2,7 @@ import React from 'react';
 import './styles/Home.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 import raul from '../assets/rauljouman.png';
 
 const Home = () => {
@@ -27,6 +27,14 @@ const Home = () => {
                 </a>
                 <a href="https://linkedin.com/in/raul-jouman-ip" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+                <a
+                  href="/CVRaulJouman.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Descargar CV"
+                >
+                  <FontAwesomeIcon icon={faFile} />
                 </a>
               </div>
             </div>

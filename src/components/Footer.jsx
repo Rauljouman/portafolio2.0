@@ -3,7 +3,7 @@ import React from "react";
 import "./styles/Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 
 
 const Footer = () => {
@@ -19,6 +19,14 @@ const Footer = () => {
           </a>
           <a href="https://linkedin.com/in/raul-jouman-ip" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a
+            href="/CVRaulJouman.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Descargar CV"
+          >
+            <FontAwesomeIcon icon={faFile} />
           </a>
         </div>
         <p>&copy; {new Date().getFullYear()} Raül Jouman.<br/> Todos los derechos resevados.</p>

@@ -1,12 +1,27 @@
 import React from "react";
 import Card from "./Card";
 import "./styles/Projects.css";
-import SpaceInvaders from "../assets/SpaceInvaders.png";
+import Atletic from "../assets/atletic.png";
 import TicTacToe from "../assets/TicTacToe.png";
 import BikeShare from "../assets/BikeShare.png";
 import Portafolio1 from "../assets/Portafolio1.png";
 import { useScrollAnimation } from "./ScrollAnimation";
 
+/*************  ✨ Windsurf Command ⭐  *************/
+/**
+ * Renders the Projects section containing a list of project cards.
+ * Utilizes the useScrollAnimation hook to animate the section entrance.
+ * Each project is displayed using the Card component with details such 
+ * as image, title, subtitle, description, and a link to the project.
+ * 
+ * The projects showcased include:
+ * - Atlètic Les Corts: A website recreation of the Space Invaders arcade game.
+ * - BikeShare: A mobile app for urban bike rentals, developed with React Native.
+ * - Tic Tac Toe: A console game version of the classic Tic Tac Toe, developed in Java.
+ * - Portafolio 1.0: A personal portfolio website developed with HTML, CSS, and JavaScript.
+ */
+
+/*******  4bea8d59-0493-46b8-9bf5-f4ca979d7ba8  *******/
 const Projects = () => {
 const [ref, visible] = useScrollAnimation();
 return (
@@ -19,6 +34,13 @@ return (
                 </p>
 
                 <div className="cards-container">
+                    <Card
+                        img={Atletic}
+                        title="Atlètic Les Corts"
+                        subtitle="Web Site"
+                        description="Sitio web moderno y responsive para el club Atlètic Les Corts Futsal. Desarrollado con Next.js, React y CSS Modules, e integrado con Firebase para la gestión de equipos. Optimizado para SEO y rendimiento."
+                        link="https://atletic-lc-page.vercel.app"
+                    />
                     <Card
                         img={BikeShare}
                         title="BikeShare "
@@ -39,13 +61,6 @@ return (
                         subtitle="Web site"
                         description="Portafolio personal desarrollado con HTML, CSS y JavaScript, mostrando mis proyectos y habilidades. Incluye un diseño responsivo y una navegación intuitiva."
                         link="https://github.com/Rauljouman/Portafolio.github.io"
-                    />
-                    <Card
-                        img={SpaceInvaders}
-                        title="Space Invaders "
-                        subtitle="Web Game"
-                        description="Recreación del juego arcade Space Invaders, programado con HTML, CSS y JavaScript puro, enfocado en la lógica y el dinamismo visual. Creado con HTML, CSS y JavaScript."
-                        link="https://github.com/Rauljouman/Space-Invader"
                     />
                 </div>
             </div>
